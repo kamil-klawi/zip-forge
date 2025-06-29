@@ -2,6 +2,7 @@
 #include <limits>
 
 #include "../include/huffman.h"
+#include "../include/lz77.h"
 
 int main() {
     int choice;
@@ -28,6 +29,8 @@ int main() {
                 break;
             case 2:
                 std::cout << "Selected: LZ77\n";
+                compressed = LZ77::compress(input);
+                std::cout << "Compressed text: " << compressed << "\n";
                 break;
             case 3:
                 std::cout << "Selected: RLE\n";

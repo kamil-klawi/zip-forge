@@ -7,4 +7,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 add_executable(zip_forge src/main.cpp
         include/huffman.h
-        src/huffman.cpp)
+        include/lz77.h
+        src/huffman.cpp
+        src/lz77.cpp)
